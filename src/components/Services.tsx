@@ -1,5 +1,7 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Scissors, Stethoscope } from "lucide-react";
+import { SectionLogos } from "@/components/SectionLogos";
 
 export const Services = () => {
   const services = [
@@ -27,7 +29,9 @@ export const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-4">
+    <section id="services" className="py-20 px-4 relative">
+      <SectionLogos section="services" />
+      
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">

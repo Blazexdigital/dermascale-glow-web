@@ -1,6 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import { SectionLogos } from "@/components/SectionLogos";
 
 export const Testimonials = () => {
   const testimonials = [
@@ -31,7 +32,9 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 px-4">
+    <section id="testimonials" className="py-20 px-4 relative">
+      <SectionLogos section="testimonials" />
+      
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">

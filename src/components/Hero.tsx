@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp } from "lucide-react";
+import { SectionLogos } from "@/components/SectionLogos";
 
 export const Hero = () => {
   const scrollToContact = () => {
@@ -12,6 +13,8 @@ export const Hero = () => {
 
   return (
     <section className="pt-32 pb-20 px-4 relative overflow-hidden">
+      <SectionLogos section="hero" />
+      
       {/* Hero Image */}
       <div className="absolute right-0 top-0 h-full w-1/2 opacity-20 hidden lg:block">
         <img 
