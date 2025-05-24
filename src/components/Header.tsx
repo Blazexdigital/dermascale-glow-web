@@ -23,7 +23,7 @@ export const Header = () => {
               alt="Dermascale Logo" 
               className="h-8 w-auto"
             />
-            <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+            <div className="text-2xl font-bold text-white">
               Dermascale
             </div>
           </div>

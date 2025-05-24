@@ -8,19 +8,22 @@ export const Services = () => {
       icon: <Stethoscope className="w-8 h-8" />,
       title: "Dermatology Marketing",
       description: "Targeted campaigns for skin treatments, acne solutions, and cosmetic dermatology procedures. Drive quality leads for your dermatology practice.",
-      features: ["Google Ads Management", "Social Media Marketing", "Content Creation", "Local SEO Optimization"]
+      features: ["Google Ads Management", "Social Media Marketing", "Content Creation", "Local SEO Optimization"],
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop&crop=face"
     },
     {
       icon: <Scissors className="w-8 h-8" />,
       title: "Hair Transplant Marketing",
       description: "Specialized marketing for hair restoration clinics. Connect with patients seeking hair transplant solutions and FUE procedures.",
-      features: ["Before/After Campaigns", "Video Marketing", "Consultation Booking Funnels", "Reputation Management"]
+      features: ["Before/After Campaigns", "Video Marketing", "Consultation Booking Funnels", "Reputation Management"],
+      image: "https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=400&h=300&fit=crop&crop=face"
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
       title: "Cosmetic Marketing",
       description: "Performance marketing for cosmetic procedures, aesthetic treatments, and beauty enhancement services.",
-      features: ["Instagram & TikTok Ads", "Influencer Partnerships", "Email Marketing", "Conversion Optimization"]
+      features: ["Instagram & TikTok Ads", "Influencer Partnerships", "Email Marketing", "Conversion Optimization"],
+      image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop&crop=face"
     }
   ];
 
@@ -42,7 +45,15 @@ export const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="bg-slate-800/50 border-slate-700 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105 group">
+            <Card key={index} className="bg-slate-800/50 border-slate-700 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105 group overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-800 to-transparent opacity-60"></div>
+              </div>
               <CardContent className="p-8">
                 <div className="text-cyan-400 mb-4 group-hover:text-purple-400 transition-colors duration-300">
                   {service.icon}

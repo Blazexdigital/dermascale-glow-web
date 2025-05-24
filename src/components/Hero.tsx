@@ -11,8 +11,18 @@ export const Hero = () => {
   };
 
   return (
-    <section className="pt-32 pb-20 px-4">
-      <div className="container mx-auto text-center max-w-6xl">
+    <section className="pt-32 pb-20 px-4 relative overflow-hidden">
+      {/* Hero Image */}
+      <div className="absolute right-0 top-0 h-full w-1/2 opacity-20 hidden lg:block">
+        <img 
+          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop&crop=face" 
+          alt="Dermatologist consultation" 
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-l from-transparent to-slate-900"></div>
+      </div>
+
+      <div className="container mx-auto text-center max-w-6xl relative z-10">
         <div className="mb-8">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-slate-800/50 border border-slate-700 mb-6 animate-fade-in">
             <TrendingUp className="w-4 h-4 mr-2 text-cyan-400" />
