@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Scissors, Stethoscope } from "lucide-react";
 
@@ -9,14 +8,14 @@ export const Services = () => {
       title: "Dermatology Marketing",
       description: "Targeted campaigns for skin treatments, acne solutions, and cosmetic dermatology procedures. Drive quality leads for your dermatology practice.",
       features: ["Google Ads Management", "Social Media Marketing", "Content Creation", "Local SEO Optimization"],
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=300&fit=crop&crop=face"
     },
     {
       icon: <Scissors className="w-8 h-8" />,
       title: "Hair Transplant Marketing",
       description: "Specialized marketing for hair restoration clinics. Connect with patients seeking hair transplant solutions and FUE procedures.",
       features: ["Before/After Campaigns", "Video Marketing", "Consultation Booking Funnels", "Reputation Management"],
-      image: "https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=400&h=300&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=300&fit=crop&crop=face"
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
