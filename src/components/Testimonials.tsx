@@ -5,21 +5,21 @@ import { Star } from "lucide-react";
 export const Testimonials = () => {
   const testimonials = [
     {
-      name: "Dr. Sarah Chen",
+      name: "Dr. Priya Sharma",
       title: "Dermatologist & Aesthetic Medicine",
       content: "Dermascale transformed our patient acquisition. We went from 20 consultations per month to 80+ in just 6 months. Their understanding of medical marketing is unmatched.",
       rating: 5,
       practice: "Elite Dermatology Clinic"
     },
     {
-      name: "Dr. Michael Rodriguez",
+      name: "Dr. Rajesh Khanna",
       title: "Hair Transplant Surgeon",
       content: "The ROI on our campaigns has been incredible. Their targeted approach to hair restoration marketing brought us quality leads that convert to actual procedures.",
       rating: 5,
       practice: "Advanced Hair Solutions"
     },
     {
-      name: "Dr. Emily Watson",
+      name: "Dr. Meera Patel",
       title: "Cosmetic Surgery & Aesthetics",
       content: "Professional, compliant, and results-driven. Dermascale understands the aesthetic industry like no other agency. Our practice has doubled in size since partnering with them.",
       rating: 5,
@@ -44,11 +44,11 @@ export const Testimonials = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-slate-800/50 border-slate-700 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105">
+            <Card key={index} className="bg-slate-800/50 border-slate-700 hover:border-purple-500/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20">
               <CardContent className="p-8">
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current animate-pulse" />
                   ))}
                 </div>
                 <p className="text-slate-300 mb-6 italic">"{testimonial.content}"</p>

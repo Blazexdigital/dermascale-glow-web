@@ -6,12 +6,26 @@ import { useState } from "react";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="fixed top-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-            Dermascale
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/2d058e1c-b1e6-4835-bbca-c60d471b78dd.png" 
+              alt="Dermascale Logo" 
+              className="h-8 w-auto"
+            />
+            <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+              Dermascale
+            </div>
           </div>
           
           {/* Desktop Navigation */}
@@ -28,7 +42,10 @@ export const Header = () => {
             <a href="#contact" className="text-slate-300 hover:text-white transition-colors duration-300">
               Contact
             </a>
-            <Button className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105">
+            <Button 
+              onClick={scrollToContact}
+              className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25"
+            >
               Get Started
             </Button>
           </nav>
@@ -58,7 +75,10 @@ export const Header = () => {
               <a href="#contact" className="text-slate-300 hover:text-white transition-colors duration-300">
                 Contact
               </a>
-              <Button className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-6 py-2 rounded-full w-full">
+              <Button 
+                onClick={scrollToContact}
+                className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-6 py-2 rounded-full w-full transition-all duration-300 transform hover:scale-105"
+              >
                 Get Started
               </Button>
             </div>

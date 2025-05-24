@@ -24,32 +24,32 @@ export const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
-            <Card className="bg-slate-800/50 border-slate-700">
+            <Card className="bg-slate-800/50 border-slate-700 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-6">Get Your Free Strategy Session</h3>
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-slate-300 mb-2">First Name</label>
-                      <Input className="bg-slate-700 border-slate-600 text-white" placeholder="Dr. John" />
+                      <Input className="bg-slate-700 border-slate-600 text-white transition-all duration-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20" placeholder="Dr. John" />
                     </div>
                     <div>
                       <label className="block text-slate-300 mb-2">Last Name</label>
-                      <Input className="bg-slate-700 border-slate-600 text-white" placeholder="Smith" />
+                      <Input className="bg-slate-700 border-slate-600 text-white transition-all duration-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20" placeholder="Smith" />
                     </div>
                   </div>
                   <div>
                     <label className="block text-slate-300 mb-2">Email</label>
-                    <Input className="bg-slate-700 border-slate-600 text-white" placeholder="doctor@clinic.com" type="email" />
+                    <Input className="bg-slate-700 border-slate-600 text-white transition-all duration-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20" placeholder="doctor@clinic.com" type="email" />
                   </div>
                   <div>
                     <label className="block text-slate-300 mb-2">Phone</label>
-                    <Input className="bg-slate-700 border-slate-600 text-white" placeholder="(555) 123-4567" type="tel" />
+                    <Input className="bg-slate-700 border-slate-600 text-white transition-all duration-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20" placeholder="+91 96253 06525" type="tel" />
                   </div>
                   <div>
                     <label className="block text-slate-300 mb-2">Practice Type</label>
                     <Select>
-                      <SelectTrigger className="bg-slate-700 border-slate-600 text-white">
+                      <SelectTrigger className="bg-slate-700 border-slate-600 text-white transition-all duration-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20">
                         <SelectValue placeholder="Select your specialty" />
                       </SelectTrigger>
                       <SelectContent className="bg-slate-700 border-slate-600">
@@ -62,13 +62,13 @@ export const Contact = () => {
                   </div>
                   <div>
                     <label className="block text-slate-300 mb-2">Practice Name</label>
-                    <Input className="bg-slate-700 border-slate-600 text-white" placeholder="Your Clinic Name" />
+                    <Input className="bg-slate-700 border-slate-600 text-white transition-all duration-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20" placeholder="Your Clinic Name" />
                   </div>
                   <div>
                     <label className="block text-slate-300 mb-2">Tell us about your goals</label>
-                    <Textarea className="bg-slate-700 border-slate-600 text-white" placeholder="What are your main marketing challenges and goals?" rows={4} />
+                    <Textarea className="bg-slate-700 border-slate-600 text-white transition-all duration-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20" placeholder="What are your main marketing challenges and goals?" rows={4} />
                   </div>
-                  <Button className="w-full bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                  <Button className="w-full bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white py-3 rounded-full text-lg font-semibold transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/40">
                     Book Free Consultation
                   </Button>
                 </form>
@@ -77,43 +77,43 @@ export const Contact = () => {
           </div>
           
           <div className="space-y-8">
-            <Card className="bg-slate-800/50 border-slate-700">
+            <Card className="bg-slate-800/50 border-slate-700 transform transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <Mail className="w-6 h-6 text-cyan-400 mr-3" />
                   <div>
                     <h4 className="text-white font-semibold">Email Us</h4>
-                    <p className="text-slate-400">hello@dermascale.com</p>
+                    <p className="text-slate-400">hello@dermascale.in</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
             
-            <Card className="bg-slate-800/50 border-slate-700">
+            <Card className="bg-slate-800/50 border-slate-700 transform transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <Phone className="w-6 h-6 text-cyan-400 mr-3" />
                   <div>
                     <h4 className="text-white font-semibold">Call Us</h4>
-                    <p className="text-slate-400">(555) 123-DERM</p>
+                    <p className="text-slate-400">+91 96253 06525</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
             
-            <Card className="bg-slate-800/50 border-slate-700">
+            <Card className="bg-slate-800/50 border-slate-700 transform transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <MapPin className="w-6 h-6 text-cyan-400 mr-3" />
                   <div>
                     <h4 className="text-white font-semibold">Office</h4>
-                    <p className="text-slate-400">Los Angeles, CA</p>
+                    <p className="text-slate-400">New Delhi, India</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
             
-            <div className="text-center p-6 bg-gradient-to-r from-purple-600/20 to-cyan-600/20 rounded-lg border border-purple-500/30">
+            <div className="text-center p-6 bg-gradient-to-r from-purple-600/20 to-cyan-600/20 rounded-lg border border-purple-500/30 transform transition-all duration-300 hover:scale-105">
               <h4 className="text-white font-semibold mb-2">Response Time</h4>
               <p className="text-slate-300">We typically respond within 2 hours during business hours</p>
             </div>
