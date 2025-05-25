@@ -1,6 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Star, MessageCircle } from "lucide-react";
 import { SectionLogos } from "@/components/SectionLogos";
 
 export const Testimonials = () => {
@@ -27,9 +28,16 @@ export const Testimonials = () => {
       content: "Professional, compliant, and results-driven. Dermascale understands the aesthetic industry like no other agency. Our practice has doubled in size since partnering with them.",
       rating: 5,
       practice: "Radiant Aesthetics Center",
-      image: "https://images.unsplash.com/photo-1594824488253-eaa4bd86eb15?w=300&h=300&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=300&fit=crop&crop=face"
     }
   ];
+
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "919625306525";
+    const message = "Hi! I'm interested in learning more about Dermascale's marketing services for my practice.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   return (
     <section id="testimonials" className="py-20 px-4 relative">
@@ -43,9 +51,17 @@ export const Testimonials = () => {
               Clients Say
             </span>
           </h2>
-          <p className="text-xl text-slate-400 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-8">
             Don't just take our word for it. Here's what leading aesthetic professionals say about our services.
           </p>
+          
+          <Button 
+            onClick={handleWhatsAppClick}
+            className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/40"
+          >
+            <MessageCircle className="w-5 h-5 mr-2" />
+            Chat on WhatsApp
+          </Button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
