@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp } from "lucide-react";
 import { SectionLogos } from "@/components/SectionLogos";
@@ -34,8 +33,9 @@ export const Hero = () => {
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
             Scale Your
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent block animate-pulse bg-[length:200%_200%] animate-[gradient_3s_ease-in-out_infinite]">
+            <span className="relative block bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent bg-[length:200%_200%] animate-[gradient_3s_ease-in-out_infinite]">
               Aesthetic Practice
+              <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 animate-[underline_3s_ease-in-out_infinite]"></div>
             </span>
             to New Heights
           </h1>

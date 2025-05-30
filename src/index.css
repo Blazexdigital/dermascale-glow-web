@@ -110,6 +110,21 @@
   }
 }
 
+@keyframes underline {
+  0% {
+    width: 0%;
+    left: 0%;
+  }
+  50% {
+    width: 100%;
+    left: 0%;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+  }
+}
+
 @keyframes slide {
   0% {
     transform: translateX(0);
