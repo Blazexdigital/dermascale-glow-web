@@ -10,7 +10,7 @@ export interface FormData {
 }
 
 export const submitToGoogleSheets = async (formData: FormData) => {
-  const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwRKvZkFIGC9v1pqxvdqkscfaSzpU9kHHdXZwMWlLWe2PpZwxG9CzlSvZceR6pBwlmA/exec';
+  const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbzFTja-s5bV38Fv4v6EBGoP87iENvDkmkXgTLJYvAM_C8gYgFti5MC4dYV5EIBq6G6Z/exec';
   
   try {
     const response = await fetch(GOOGLE_SHEETS_URL, {

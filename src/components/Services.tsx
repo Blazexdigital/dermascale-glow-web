@@ -23,7 +23,7 @@ export const Services = () => {
       icon: <Sparkles className="w-8 h-8" />,
       title: "Cosmetic Marketing",
       description: "Performance marketing for cosmetic procedures, aesthetic treatments, and beauty enhancement services.",
-      features: ["Instagram & TikTok Ads", "Influencer Partnerships", "Email Marketing", "Conversion Optimization"],
+      features: ["Instagram Ads", "Influencer Partnerships", "Email Marketing", "Conversion Optimization"],
       image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop&crop=face"
     }
   ];

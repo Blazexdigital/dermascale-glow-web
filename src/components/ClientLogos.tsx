@@ -30,12 +30,23 @@ export const ClientLogos = () => {
           opts={{
             align: "start",
             loop: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
           }}
           className="w-full max-w-5xl mx-auto"
         >
-          <CarouselContent className="-ml-2 md:-ml-4">
+          <CarouselContent className="-ml-2 md:-ml-4 animate-[slide_20s_linear_infinite]">
             {clients.map((client, index) => (
               <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center transform transition-all duration-500 hover:scale-105 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20">
+                  <div className="text-3xl mb-3 animate-pulse">{client.logo}</div>
+                  <h4 className="text-white font-medium text-sm">{client.name}</h4>
+                </div>
+              </CarouselItem>
+            ))}
+            {/* Duplicate items for smooth infinite scroll */}
+            {clients.map((client, index) => (
+              <CarouselItem key={`duplicate-${index}`} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
                 <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center transform transition-all duration-500 hover:scale-105 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20">
                   <div className="text-3xl mb-3 animate-pulse">{client.logo}</div>
                   <h4 className="text-white font-medium text-sm">{client.name}</h4>
