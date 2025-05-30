@@ -10,8 +10,7 @@ export interface FormData {
 }
 
 export const submitToGoogleSheets = async (formData: FormData) => {
-  // This is a placeholder URL - user needs to replace with their actual Google Apps Script Web App URL
-  const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
+  const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwRKvZkFIGC9v1pqxvdqkscfaSzpU9kHHdXZwMWlLWe2PpZwxG9CzlSvZceR6pBwlmA/exec';
   
   try {
     const response = await fetch(GOOGLE_SHEETS_URL, {
