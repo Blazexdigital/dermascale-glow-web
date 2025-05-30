@@ -30,8 +30,6 @@ export const ClientLogos = () => {
           opts={{
             align: "start",
             loop: true,
-            autoplay: true,
-            autoplaySpeed: 2000,
           }}
           className="w-full max-w-5xl mx-auto"
         >
