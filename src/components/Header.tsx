@@ -1,5 +1,6 @@
+
 import { Button } from "@/components/ui/button";
-import { Menu, X, Activity } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export const Header = () => {
@@ -17,8 +18,12 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="bg-gradient-to-r from-purple-600 to-cyan-600 p-2 rounded-lg">
-              <Activity className="h-6 w-6 text-white" />
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/28bf9f68-845b-46b0-ba89-4425a6353da9.png" 
+                alt="Dermascale Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="text-2xl font-bold text-white">
               Dermascale
