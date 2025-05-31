@@ -3,14 +3,27 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 export const ClientLogos = () => {
   const clients = [
-    { name: "SkinFirst Clinic", logo: "🏥" },
-    { name: "HairCare Solutions", logo: "💇" },
-    { name: "Beauty Plus", logo: "✨" },
-    { name: "Derma Excellence", logo: "🌟" },
-    { name: "Aesthetic Center", logo: "💎" },
-    { name: "Glow Clinic", logo: "🌈" },
-    { name: "Perfect Skin", logo: "🔆" },
-    { name: "Hair Restore", logo: "🎯" },
+    { 
+      name: "Dermalyn Aesthetics", 
+      logo: "/lovable-uploads/42e1fa39-ec13-46f0-9e05-69678b2b2776.png" 
+    },
+    { 
+      name: "Nurture Aesthetics", 
+      logo: "/lovable-uploads/925f408f-3b76-4645-900e-11bbe980fb21.png" 
+    },
+    { 
+      name: "Approach Aesthetics", 
+      logo: "/lovable-uploads/ddf9bf7d-ef67-419c-8abd-a85cc765f9d4.png" 
+    },
+    { 
+      name: "Premium Aesthetics", 
+      logo: "/lovable-uploads/0146044c-4093-4e1a-bf59-30c50acc79a0.png" 
+    },
+    { 
+      name: "+12 More", 
+      logo: null,
+      isText: true 
+    },
   ];
 
   return (
@@ -36,18 +49,46 @@ export const ClientLogos = () => {
           <CarouselContent className="-ml-2 md:-ml-4 animate-[slide_20s_linear_infinite]">
             {clients.map((client, index) => (
               <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center transform transition-all duration-500 hover:scale-105 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20">
-                  <div className="text-3xl mb-3 animate-pulse">{client.logo}</div>
-                  <h4 className="text-white font-medium text-sm">{client.name}</h4>
+                <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center transform transition-all duration-500 hover:scale-105 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 h-32 flex flex-col items-center justify-center">
+                  {client.isText ? (
+                    <div className="text-2xl font-bold text-gradient bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                      +12 More
+                    </div>
+                  ) : (
+                    <>
+                      <div className="h-16 w-16 mb-2 flex items-center justify-center">
+                        <img 
+                          src={client.logo} 
+                          alt={client.name}
+                          className="max-h-full max-w-full object-contain"
+                        />
+                      </div>
+                      <h4 className="text-white font-medium text-xs">{client.name}</h4>
+                    </>
+                  )}
                 </div>
               </CarouselItem>
             ))}
             {/* Duplicate items for smooth infinite scroll */}
             {clients.map((client, index) => (
               <CarouselItem key={`duplicate-${index}`} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center transform transition-all duration-500 hover:scale-105 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20">
-                  <div className="text-3xl mb-3 animate-pulse">{client.logo}</div>
-                  <h4 className="text-white font-medium text-sm">{client.name}</h4>
+                <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center transform transition-all duration-500 hover:scale-105 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 h-32 flex flex-col items-center justify-center">
+                  {client.isText ? (
+                    <div className="text-2xl font-bold text-gradient bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                      +12 More
+                    </div>
+                  ) : (
+                    <>
+                      <div className="h-16 w-16 mb-2 flex items-center justify-center">
+                        <img 
+                          src={client.logo} 
+                          alt={client.name}
+                          className="max-h-full max-w-full object-contain"
+                        />
+                      </div>
+                      <h4 className="text-white font-medium text-xs">{client.name}</h4>
+                    </>
+                  )}
                 </div>
               </CarouselItem>
             ))}

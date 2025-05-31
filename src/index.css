@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -110,18 +109,21 @@
   }
 }
 
-@keyframes underline {
+@keyframes colorful-gradient {
   0% {
-    width: 0%;
-    left: 0%;
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 0%;
   }
   50% {
-    width: 100%;
-    left: 0%;
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
   }
   100% {
-    width: 0%;
-    left: 100%;
+    background-position: 0% 50%;
   }
 }
 
