@@ -20,6 +20,10 @@ export const ClientLogos = () => {
       logo: "/lovable-uploads/0146044c-4093-4e1a-bf59-30c50acc79a0.png" 
     },
     { 
+      name: "New Clinic", 
+      logo: "/lovable-uploads/62020fab-9d0a-4c68-b2be-e6aeafedd07c.png" 
+    },
+    { 
       name: "+12 More", 
       logo: null,
       isText: true 
@@ -55,16 +59,13 @@ export const ClientLogos = () => {
                       +12 More
                     </div>
                   ) : (
-                    <>
-                      <div className="h-16 w-16 mb-2 flex items-center justify-center">
-                        <img 
-                          src={client.logo} 
-                          alt={client.name}
-                          className="max-h-full max-w-full object-contain"
-                        />
-                      </div>
-                      <h4 className="text-white font-medium text-xs">{client.name}</h4>
-                    </>
+                    <div className="h-20 w-20 flex items-center justify-center">
+                      <img 
+                        src={client.logo} 
+                        alt={client.name}
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
                   )}
                 </div>
               </CarouselItem>
@@ -78,16 +79,13 @@ export const ClientLogos = () => {
                       +12 More
                     </div>
                   ) : (
-                    <>
-                      <div className="h-16 w-16 mb-2 flex items-center justify-center">
-                        <img 
-                          src={client.logo} 
-                          alt={client.name}
-                          className="max-h-full max-w-full object-contain"
-                        />
-                      </div>
-                      <h4 className="text-white font-medium text-xs">{client.name}</h4>
-                    </>
+                    <div className="h-20 w-20 flex items-center justify-center">
+                      <img 
+                        src={client.logo} 
+                        alt={client.name}
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
                   )}
                 </div>
               </CarouselItem>
