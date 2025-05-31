@@ -53,7 +53,7 @@ export const Footer = () => {
         
         <div className="border-t border-slate-800 mt-8 pt-8 text-center">
           <p className="text-slate-400">
-            © 2024 Dermascale. All rights reserved. Specialized performance marketing for medical aesthetics.
+            © 2024 Dermascale. All rights reserved. Owned by Blazexdigital Pvt. Ltd.
           </p>
         </div>
       </div>

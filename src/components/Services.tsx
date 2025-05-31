@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Scissors, Stethoscope } from "lucide-react";
 import { SectionLogos } from "@/components/SectionLogos";
@@ -10,21 +9,21 @@ export const Services = () => {
       title: "Dermatology Marketing",
       description: "Targeted campaigns for skin treatments, acne solutions, and cosmetic dermatology procedures. Drive quality leads for your dermatology practice.",
       features: ["Google Ads Management", "Social Media Marketing", "Content Creation", "Local SEO Optimization"],
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop&crop=face"
+      image: "/lovable-uploads/d86f467d-c6cc-4a36-ad08-23782abfdee8.png"
     },
     {
       icon: <Scissors className="w-8 h-8" />,
       title: "Hair Transplant Marketing",
       description: "Specialized marketing for hair restoration clinics. Connect with patients seeking hair transplant solutions and FUE procedures.",
       features: ["Before/After Campaigns", "Video Marketing", "Consultation Booking Funnels", "Reputation Management"],
-      image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=300&fit=crop&crop=face"
+      image: "/lovable-uploads/bbbd9041-70c1-426d-9825-a84f82f46f49.png"
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
       title: "Cosmetic Marketing",
       description: "Performance marketing for cosmetic procedures, aesthetic treatments, and beauty enhancement services.",
       features: ["Instagram Ads", "Influencer Partnerships", "Email Marketing", "Conversion Optimization"],
-      image: "https://images.unsplash.com/photo-1612277795421-9bc7706a4a34?w=400&h=300&fit=crop&crop=face"
+      image: "/lovable-uploads/54ee3689-58c4-4e7b-be6f-85bf74542501.png"
     }
   ];
 
